@@ -3,8 +3,8 @@ local metadata =
 	plugin =
 	{
 		format = 'staticLibrary',
-		staticLibs = { 'NotificationsV2Plugin.firebase',   }, 
-		frameworks = { 'FBLPromises', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseInstallations', 'FirebaseMessaging', 'GoogleDataTransport', 'GoogleUtilities', 'nanopb', },
+		staticLibs = { 'NotificationsV2Plugin.firebase',   },
+		frameworks = { 'PromisesObjC', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseInstallations', 'FirebaseMessaging', 'GoogleDataTransport', 'GoogleUtilities', 'nanopb', },
 		frameworksOptional = { 'UserNotifications', 'UserNotificationsUI' },
 		delegates = { 'CoronaNotificationsDelegate' }
 	}
