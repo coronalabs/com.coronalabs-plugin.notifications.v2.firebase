@@ -2,11 +2,12 @@ local metadata =
 {
 	plugin =
 	{
-		format = "staticLibrary",
-		staticLibs = { 'NotificationsV2Plugin',   }, 
-		frameworks = { },
-		frameworksOptional = { "UserNotifications", "UserNotificationsUI" },
-		delegates = { "CoronaNotificationsDelegate" }
+		format = 'staticLibrary',
+		staticLibs = { "z", "sqlite3", "NotificationsV2Plugin.firebase" },
+		frameworks = {'FBLPromises', 'FirebaseCore', 'FirebaseCoreInternal', 'FirebaseInstallations', 'FirebaseMessaging', 'GoogleAppMeasurement', 'GoogleAppMeasurementIdentitySupport', 'GoogleDataTransport', 'nanopb', "GoogleUtilities", "CoreTelephony" },
+		frameworksOptional = { 'UserNotifications', 'UserNotificationsUI' },
+		delegates = { 'CoronaNotificationsDelegate' },
+		usesSwift =true,
 	}
 }
 
